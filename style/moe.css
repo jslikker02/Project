@@ -1,0 +1,102 @@
+/* header */
+header {
+    background-color: #ffffff;
+    display: flex;
+}
+header nav {
+    margin: auto;
+    margin-right: 1em;
+    display: flex
+}
+.logo {
+    width: 8em;
+    height: 8em;
+}
+
+/* nav */
+header nav li:nth-of-type(1) {
+    background-image: url(../Fotos/profielblauw.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    list-style: none;
+}
+
+header nav li:nth-of-type(2) {
+    background-image: url(../Fotos/favo.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    list-style: none;
+}
+
+header nav li:nth-of-type(3) {
+    background-image: url(../Fotos/zoekengroen.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    list-style: none;
+}
+
+/* nav */
+nav ul{
+    display: flex;
+    transition: 2s;
+}
+nav ul.active{
+    display: flex;
+    margin-right: 10em;
+    transition: 2s;
+}
+nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.verhaal {
+    display: block;
+}
+
+@media screen and (min-width: 1em) and (max-width: 40em) {
+    .klein {
+        display: block;
+        width: 100%
+    }
+    .middel {
+        display: none;
+    }
+    .groot {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 40em)and (max-width: 60em) {
+    .klein {
+        display: none;
+    }
+    .middel {
+        display: block;
+        width: 100%
+    }
+    .groot {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .klein {
+        display: none;
+    }
+    .middel {
+        display: none;
+    }
+    .groot {
+        display: block;
+        width: 100%
+    }
+}

@@ -1,0 +1,31 @@
+}
+section article:hover{
+    background-image: url(../Fotos/Hover/moe-1.png);
+    transition: all 1 s ease-in;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 1em;
+}
+main article:nth-of-type(1):hover{
+     background-image: url(../Fotos/Hover/beroemdachtergrond.jpg);
+    transition: all 1 s ease-in;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+main article:nth-of-type(2):hover{
+     background-image: url(../Fotos/Hover/irritatie-achtergrond-1%20kopie.jpg);
+    transition: all 1 s ease-in;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+main article:nth-of-type(3):hover{
+     background-image: url(../Fotos/Hover/moe-1.png);
+    transition: all 1 s ease-in;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+
+
+

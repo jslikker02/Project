@@ -1,0 +1,533 @@
+/*default styling*/
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f1e6d9;
+    margin: 0;
+}
+
+/* header */
+header {
+    background-color: #ffffff;
+    display: flex;
+}
+header nav {
+    margin: auto;
+    margin-right: 1em;
+    display: flex
+}
+
+/* nav */
+header nav li:nth-of-type(1) {
+    background-image: url(../Fotos/profielblauw.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    list-style: none;
+}
+
+header nav li:nth-of-type(2) {
+    background-image: url(../Fotos/favo.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    list-style: none;
+}
+
+header nav li:nth-of-type(3) {
+    background-image: url(../Fotos/zoekengroen.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    list-style: none;
+}
+
+/* nav */
+nav ul{
+    display: flex;
+    transition: 2s;
+}
+nav ul.active{
+    display: flex;
+    margin-right: 10em;
+    transition: 2s;
+}
+nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* uitgelicht sectie */
+
+#highlighted{
+   box-sizing: border-box;
+    flex-direction: row;
+    background-image: url(../Fotos/strandachtergrond.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20em;
+    background-position:center;
+}
+form {
+    background-color: #4fcd67;
+}
+
+/* Tekst */
+h1 {
+    font-family: "Nexa-Bold";
+    color: #4fcd67;
+}
+h2 {
+    font-family: "NexaRegular";
+    color: #4fcd67;
+}
+
+h3 {
+font-family: "Nexa-Bold";
+    font-size: 1.5em;
+    color: #4fcd67;
+    margin-left: 1em;
+}
+
+h4 {
+        font-family: "Nexa-Bold";
+    color: #ea486a;
+    text-align: center;
+    margin-top: 0;
+    margin-left: -1em;
+}
+p {
+    font-family: "NexaRegular";
+    margin-bottom: auto;
+    margin-left: 1.25em;
+    text-align: left;
+}
+
+legend {
+    font-family: "Nexa-Bold";
+    color: #4fcd67;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 22em){
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2em;
+    margin: 0.5em;
+}
+    .download{
+       margin-left: 9.7em;
+}
+    .download.active{
+        margin-left: 9.7em;
+    }
+}
+@media screen and (max-width: 25em){
+      section article {
+           width: 22em;
+}
+
+}
+@media screen and (min-width: 48em){
+    main {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+
+    margin: 1em;
+    }
+        .download{
+       margin-left: 11em;
+}
+      .download.active{
+        margin-left: 11em;
+    }
+}
+
+@media screen and (min-width: 70em){
+    main {
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+    margin: 1em;
+    }
+           .download{
+       margin-left: 11em;
+}
+     .download.active{
+        margin-left: 11em;
+    }
+}
+/* article */
+article {
+    background-color: white;
+    border-radius: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+section article {
+     background-color: white;
+    border-radius: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    max-width: 25em;
+    margin: auto;
+    display: flex;
+}
+article a{
+    background-color: #ea486a;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    border-radius: 3em;
+    font-family: "Nexa-Bold";
+    height: 2em;
+    width: 7em;
+    box-shadow:  inset 0 -0.1875rem 0.0625rem #b33751;
+    padding-top: 0.4em;
+    margin-left: 1em;
+}
+
+section article section {
+      margin-right: -2em;
+
+}
+
+article footer {
+display: flex;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+button {
+    background-color: #ea486a;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    border-radius: 3em;
+    font-family: "Nexa-Bold";
+    height: 2em;
+    width: 2em;
+    margin-left: 6em;
+    box-shadow:  inset 0 -0.1875rem 0.0625rem #b33751;
+    transition: 2s;
+
+}
+section button.active {
+background-color: #4fcd67;
+    border: none;
+    color: #ea486a;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    border-radius: 3em;
+    font-family: "Nexa-Bold";
+    height: 2em;
+    width: 2em;
+    margin-left: 6em;
+    box-shadow: inset 0 -0.1875rem 0.0625rem #2a8e49;
+    transition: 2s;
+}
+
+main article button.active {
+ background-color: #4fcd67;
+    border: none;
+    color: #ea486a;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    border-radius: 3em;
+    font-family: "Nexa-Bold";
+    height: 2em;
+    width: 2em;
+    margin-left: 6em;
+    box-shadow: inset 0 -0.1875rem 0.0625rem #2a8e49;
+    transition: 2s;
+}
+button:hover{
+    background-color: #ff5679;
+}
+article a:hover{
+    background-color: #ff5679;
+}
+.download{
+    margin-top: 0.4em;
+    position: absolute;
+    font-size: 2em;
+    color: #4fcd67;
+    border-radius: 3em;
+    width: 1em;
+    height: 1em;
+    transition: 3s;
+}
+.download.active{
+    background-image: url(../Fotos/vinkje2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+background-color: #4fcd67;
+    margin-top: 0.4em;
+    position: absolute;
+    font-size: 2em;
+    color: transparent;
+    transform:  rotate(-360deg);
+    transition: 5s;
+    border: 1px solid;
+    border-radius: 3em;
+    width: 1em;
+    height: 1em;
+}
+.download2{
+     margin-left: 92%;
+    margin-top: -1.8em;
+    margin-bottom: 0.2em;
+    font-size: 2em;
+    color: #4fcd67;
+    transition: 3s;
+    width: 1em;
+    height: 1em;
+}
+.download2.active{
+    margin-left: 92%;
+    margin-top: -1.8em;
+    margin-bottom: 0.2em;
+    background-image: url(../Fotos/vinkje2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #4fcd67;
+    font-size: 2em;
+    color: transparent;
+    transform:  rotate(-360deg);
+    transition: 5s;
+    border: 1px solid;
+    border-radius: 3em;
+    width: 1em;
+    height: 1em;
+
+}
+form button {
+    background-color: #ea486a;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    border-radius: 3em;
+    font-family: "Nexa-Bold";
+    height: 2em;
+    width: 10em;
+    margin-left: 6em;
+    box-shadow: inset 0 -0.1875rem 0.0625rem #b33751;
+    transition: 2s;
+    font-size: 0.7em;
+    margin-left: 45%;
+}
+}
+
+
+
+section label {
+    font-family: "NexaRegular";
+    text-align: center;
+    margin: auto;
+     cursor: pointer;
+    display: block;
+    color: #24029a;
+    background-color: white;
+
+    font-family: "Nexa-Bold";
+}
+
+a {
+    margin: auto;
+}
+
+a img {
+    width: 3em;
+}
+
+footer section {
+    background-image: url(../Fotos/plus.png);
+    background-size: 2em;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    margin-left: 4em;
+}
+
+.logo {
+    width: 8em;
+    height: 8em;
+}
+
+main section input: {
+    background-color: black;
+    margin: auto;
+    border-radius: 3em;
+    text-align: center;
+    width: 50%;
+    margin-left: 20em;
+}
+
+section img {
+    width: 2em;
+    height: 2em;
+    margin-left: 17em;
+}
+
+
+label {
+    cursor: pointer;
+    display: block;
+    color: #24029a;
+    background-color: #4fcd67;
+    font-family: "Nexa-Bold";
+    text-align: center;
+    margin: auto;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu {
+    display: none;
+    overflow: hidden;
+}
+
+#menu-toggle:checked + #menu {
+    display: block;
+
+}
+div{
+display: block;
+
+}
+section form{
+    background-color: white;
+    border-radius: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    width: 30em;
+    /* margin-top: 5em; */
+    height: 10em;
+    font-size: 1.5em;
+}
+
+ul li input{
+  opacity:0;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 3em;
+     border: none;
+    transition: 2s;
+
+
+}
+ul li input.active{
+    opacity: 1;
+    background-color: #4fcd67;
+    height: 4rem;
+    width: 14.8em;
+    border-radius: 3em;
+    border: none;
+    transition: 2s;
+    font-size: 1em;
+}
+/* inlogpagina */
+
+.inlogmain {
+    background-color: #4fcd67;
+    height: 60em;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10em;
+}
+    section form input{
+    width: 20em;
+    border-radius: .5rem;
+    font-family: "NexaRegular";
+    font-size: 0.6em;
+}
+section form button {
+    background-color: #ea486a;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    border-radius: 3em;
+    font-family: "Nexa-Bold";
+    height: 2em;
+    width: 10em;
+    margin-top: 1em;
+    box-shadow: inset 0 -0.1875rem 0.0625rem #b33751;
+    transition: 2s;
+    font-size: 0.7em;
+    margin-left: 0%;
+}
+section form label {
+    cursor: pointer;
+    display: block;
+    color: #24029a;
+    background-color: white;
+    font-family: "Nexa-Bold";
+    text-align: left;
+    margin: auto;
+}
+
+section form legend {
+    font-family: "Nexa-Bold";
+    color: #4fcd67;
+    text-align: left;
+}
+
+section form input:empty {
+  background-color: white;
+}
+section form input:invalid {
+  background: rgba(255,0,0,.1);
+}
+section form input:valid {
+    background-color: lightgreen;
+    transition: 3s;
+
+}
+
+section form input:focus {
+    border: 0.2em solid #2900a1;
+}

@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1e6d9;
+}
+
+header {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+
+
+
+}
+
+main {
+    box-sizing: border-box;
+    flex-direction: row;
+    background-image:url(../Fotos/strandachtergrond.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    height: 50em;
+}
+
+form {
+    background-color: #4fcd67;
+    display: flex;
+    flex-direction:row;
+}
+
+h1 {
+    font-family: "Nexa-Bold";
+    color: #4fcd67;
+}
+
+h3 {
+    font-family: "Nexa-Bold";
+    color: #4fcd67;
+}
+
+article {
+    background-color: white;
+    border-radius: .5rem;
+
+}
+
+button {
+    background-color: #ea486a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    font-family:"Nexa-Bold";
+}
+button:hover {
+    background-color: #ea486a;
+    color: white;
+}
+p {
+    font-family: "NexaRegular";
+    margin: auto;
+}
+a{
+    margin: auto;
+}
+section:nth-child(1){
+display: block;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+
+}
+section:nth-child(2){
+display: block;
+display: flex;
+
+}
+
+.logo{
+width: 8em;
+    height: 8em;
+
+}
+.inloggen{
+    display: block;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-top: 10em;
+}
+input{
+     margin: auto;
+}
+
+
