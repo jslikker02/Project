@@ -112,6 +112,7 @@ nav a {
     height: 100%;
 }
 
+
 /* uitgelicht sectie */
 
 #highlighted{
@@ -123,6 +124,13 @@ nav a {
     flex-wrap: wrap;
     height: 20em;
     background-position:center;
+    animation-name: verdwijn;
+    animation-duration: 1s;
+   animation-fill-mode:forwards;
+}
+@keyframes verdwijn {
+    to {opacity: 0;
+    height: 1em;}
 }
 /* Formulier filter */
 form {
@@ -134,7 +142,11 @@ form.active {
 }
 fieldset{
     border-style: none;
-
+}
+div{
+display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
 }
 label{
     background-color: #2900a1;
@@ -201,6 +213,7 @@ h1 {
 h2 {
     font-family: "NexaRegular";
     color: #4fcd67;
+    text-align: center;
 }
 
 h3 {
@@ -293,7 +306,6 @@ main {
     }
       section form{
         width: 20em;
-
     }
 }
 
@@ -325,6 +337,15 @@ article {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    animation: zoek;
+    animation-duration: 4s;
+}
+
+
+@keyframes zoek {
+    from{opacity: 0;}
+     to {opacity: 1;
+    }
 }
 section article {
      background-color: white;
@@ -380,7 +401,6 @@ button {
     margin-left: 6em;
     box-shadow:  inset 0 -0.1875rem 0.0625rem #b33751;
     transition: 2s;
-    margin-right: 1em;
 
 }
 
@@ -429,15 +449,12 @@ button p{
         position: absolute;
     opacity: 0;
     margin-left: -4em;
-    width: 2em;
-    height: 2em;
 }
 button.active p{
-    display: block;
+   display: block;
     color: #fe3367;
     position: absolute;
-    margin-top: -22.5em;
-    margin-left: 18.4em;
+    margin-top: -20em;
     transition: 6s;
     opacity: 1;
 }
@@ -469,7 +486,7 @@ background-color: #4fcd67;
 }
 
 .download2{
-     margin-left: 91%;
+     margin-left: 92%;
     margin-top: -1.8em;
     margin-bottom: 0.2em;
     font-size: 2em;
@@ -479,7 +496,7 @@ background-color: #4fcd67;
     height: 1em;
 }
 .download2.active{
-    margin-left: 91%;
+    margin-left: 92%;
     margin-top: -1.8em;
     margin-bottom: 0.2em;
     background-image: url(../Fotos/vinkje2.png);
@@ -577,36 +594,35 @@ section form{
     padding-right: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
+    height: 10em;
     font-size: 1.5em;
 }
 
 ul li input{
   opacity:0;
-  height: 3rem;
+  height: 4rem;
   width: 4rem;
   border-radius: 3em;
      border: none;
     transition: 2s;
-    margin-top: 0.5em;
 
 
 }
 ul li input.active{
     opacity: 1;
     background-color: #4fcd67;
-    height: 3rem;
+    height: 4rem;
     width: 14.8em;
     border-radius: 3em;
     border: none;
     transition: 2s;
     font-size: 1em;
-    margin-top: 0.5em;
 }
 /* inlogpagina */
 
 .inlogmain {
-    background-image: url(../Fotos/lezen.jpg);
-    height: 40em;
+    background-color: #4fcd67;
+    height: 60em;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -616,8 +632,12 @@ ul li input.active{
     justify-content: space-around;
     padding-top: 10em;
 }
-
-
+    section form input{
+    width: 20em;
+    border-radius: .5rem;
+    font-family: "NexaRegular";
+    font-size: 0.6em;
+}
 section form button {
     background-color: #ea486a;
     border: none;
@@ -625,6 +645,7 @@ section form button {
     text-align: center;
     text-decoration: none;
     display: block;
+    font-size: 1em;
     border-radius: 3em;
     font-family: "Nexa-Bold";
     height: 2em;
@@ -638,43 +659,32 @@ section form button {
 section form label {
     cursor: pointer;
     display: block;
-    color: black;
+    color: #24029a;
     background-color: white;
     font-family: "Nexa-Bold";
     text-align: left;
     margin: auto;
-    margin-left: 0;
-    box-shadow: none;
-    font-size: 0.7em;
 }
 
 section form legend {
     font-family: "Nexa-Bold";
-    color: #2900a1;
+    color: #4fcd67;
     text-align: left;
-    display: block;
-        padding-top: 1em;
-    padding-bottom: 1em;
-}
-section form input{
-    width: 20em;
-    height: 3.5em;
-    border: solid 0.1em grey;
-    border-radius: 0.5rem;
-        margin-bottom: 2em;
 }
 
 section form input:empty {
   background-color: white;
 }
-input::placeholder{
-  color: white;
-    font-family: "NexaRegular";
+section form input:invalid {
+  background: rgba(255,0,0,.1);
 }
-
 section form input:valid {
     background-color: lightgreen;
     transition: 3s;
+
+}
+input::placeholder{
+  color: white;
 }
 
 section form input:focus {

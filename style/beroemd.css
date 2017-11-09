@@ -1,4 +1,13 @@
 /* header */
+
+header a{
+    margin-left: 0;
+}
+
+.logo {
+    width: 6em;
+    height: 6em;
+}
 header {
     background-color: #ffffff;
     display: flex;
@@ -8,16 +17,18 @@ header nav {
     margin-right: 1em;
     display: flex
 }
-.logo {
-    width: 8em;
-    height: 8em;
+header form{
+    background-color: transparent;
 }
-
+header form button{
+display: none;
+}
 /* nav */
 header nav li:nth-of-type(1) {
     background-image: url(../Fotos/profielblauw.png);
-    background-size: 4rem;
+background-size: 3rem;
     background-repeat: no-repeat;
+    background-position: center;
     width: 4rem;
     height: 4rem;
     list-style: none;
@@ -25,8 +36,9 @@ header nav li:nth-of-type(1) {
 
 header nav li:nth-of-type(2) {
     background-image: url(../Fotos/favo.png);
-    background-size: 4rem;
+    background-size: 3rem;
     background-repeat: no-repeat;
+    background-position: center;
     width: 4rem;
     height: 4rem;
     list-style: none;
@@ -34,12 +46,18 @@ header nav li:nth-of-type(2) {
 
 header nav li:nth-of-type(3) {
     background-image: url(../Fotos/zoekengroen.png);
-    background-size: 4rem;
+    background-size: 3rem;
     background-repeat: no-repeat;
+    background-position: center;
     width: 4rem;
     height: 4rem;
     list-style: none;
 }
+
+header div{
+    margin-top: 1.5em;
+color: #ea486a}
+
 
 /* nav */
 nav ul{
@@ -50,6 +68,7 @@ nav ul.active{
     display: flex;
     margin-right: 10em;
     transition: 2s;
+    margin-left: -10em;
 }
 nav a {
     display: block;
@@ -72,6 +91,9 @@ nav a {
     }
     .groot {
         display: none;
+    }
+    header nav{
+            margin-left: -4em;
     }
 }
 
